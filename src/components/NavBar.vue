@@ -1,11 +1,11 @@
 <template>
     <div class="main">
         <nav class="flex items-center justify-between bg-[#7BCEA0] p-6">
-            <div class="flex items-center flex-shrink-0 ml-20">
+            <div class="imgNav flex items-center flex-shrink-0 ml-20">
                 <img src="@/assets/imgNav.png">
             </div>
-            <div class="navbar w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                <div class="leftNav text-sm ml-64">
+            <div class="navbar flex lg:items-center lg:w-auto">
+                <div class="leftNav text-sm ml-32">
                     <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/">
                     Home
                     </router-link>
@@ -23,7 +23,7 @@
                     <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded-2xl text-white font-medium bg-[#2E567A] hover:border-transparent hover:text-[#2E567A] hover:bg-white mt-4 lg:mt-0">Donate Online</a>
                     <img src="@/assets/search.png" class="inline-block ml-5">
                 </div>
-                <div class="hamburger-menu flex-grow inline-block ml-3" @click="menu()">
+                <div class="hamburger-menu ml-3 py-5" @click="menu()">
                     <img src="@/assets/menu.png" alt="">
                 </div>
             </div>
@@ -66,7 +66,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1030px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -84,6 +84,23 @@ nav {
         align-items: center;
         display: block;
         cursor: pointer;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .imgNav {
+        width: 30%;
+        margin-left: 10px;
+    }
+    .rightNav {
+        margin-left: 20px;
+    }
+    .rightNav a {
+        font-size: x-small;
+        padding: 5px;
+    }
+    .rightNav img, .hamburger-menu img {
+        width: 15px;
+        height: 15px;
     }
 }
 </style>
