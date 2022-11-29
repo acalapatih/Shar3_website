@@ -73,16 +73,26 @@ nav {
     }
     .leftNav {
         display: none;
+        position: absolute;
+        margin-left: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
     }
     .active-nav {
         display: block;
-        top: 55px;
         z-index: 20;
     }
     .hamburger-menu {
         display: flex;
         align-items: center;
         display: block;
+        z-index: 100;
+    }
+    .hamburger-menu img {
         cursor: pointer;
     }
 }
