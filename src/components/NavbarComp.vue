@@ -5,7 +5,7 @@
                 <img src="@/assets/imgNav.png">
             </div>
             <div class="navbar flex lg:items-center lg:w-auto">
-                <div class="leftNav text-sm ml-32">
+                <div class="leftNav ml-32">
                     <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/">
                     Home
                     </router-link>
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: 'NavBar',
+    name: 'NavbarComp',
     methods: {
         menu() {
             document.querySelector('.leftNav').classList.toggle('active-nav')
@@ -48,9 +48,9 @@ export default {
 </script>
 
 <style scoped>
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 nav {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .rightNav img {

@@ -1,5 +1,5 @@
 <template>
-<NavBar />
+<NavbarComp />
 <div class="main">
   <div class="heroComp flex mx-10 my-48">
     <h3 class="text-5xl font-semibold py-24">
@@ -41,16 +41,19 @@
     </div>
   </div>
 </div>
+<FooterComp />
 </template>
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar.vue'
+import NavbarComp from '@/components/NavbarComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar
+    NavbarComp,
+    FooterComp
   },
   mounted() {
     let tailwind = document.createElement('script')
@@ -63,8 +66,8 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
  
-.heroComp h3 {
-  font-family: 'Montserrat', sans-serif;
+.main {
+  font-family: 'Poppins', sans-serif;
 }
 
 .heroComp img {
