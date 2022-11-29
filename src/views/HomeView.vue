@@ -8,6 +8,38 @@
     </h3>
     <img src="@/assets/imgHero.png" class="inline-block ml-16">
   </div>
+  <div class="content flex my-64 mx-56">
+    <div class="aside sticky top-1 bg-[#828282] rounded-xl p-5 h-[200px]">
+      <ul>
+        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Development</li>
+        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Da'wah</li>
+        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Solidarity</li>
+      </ul>
+    </div>
+    <div class="article inline-block ml-16">
+      <div class="isiArticle">
+        <h4 class="mb-7 font-semibold">Development</h4>
+        <p class="my-7 text-justify">
+          SHAR3 menjadi wadah untuk pembinaan dan pengembangan potensi remaja muslim dalam hal ketakwaan serta kebermanfaatan kepada lingkungan sekitar.
+        </p>
+        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#828282] hover:font-semibold">Read More</a>
+      </div>
+      <div class="isiArticle my-64">
+        <h4 class="mb-7 font-semibold">Da'wah</h4>
+        <p class="my-7 text-justify">
+          Dakwah menjadi fokus dari program yang diselenggarakan oleh SHAR3. Kegiatan maupun konten disajikan oleh SHAR3 sebagai sarana peningkatan ilmu keagamaan dan keimanan.
+        </p>
+        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#6AA121] hover:font-semibold">Read More</a>
+      </div>
+      <div class="isiArticle mt-64">
+        <h4 class="mb-7 font-semibold">Solidarity</h4>
+        <p class="my-7 text-justify">
+          SHAR3 memiliki misi kebermanfaatan kepada sesama manusia dengan pelaksanaan kegiatan sosial maupun agenda donasi kemanusiaan kepada yang membutuhkan.
+        </p>
+        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#964800] hover:font-semibold">Read More</a>
+      </div>
+    </div>
+  </div>
 </div>
 </template>
 
