@@ -9,30 +9,33 @@
     <img src="@/assets/imgHero.png" class="inline-block ml-16">
   </div>
   <div class="content flex my-64 mx-56">
-    <div class="aside sticky top-1 bg-[#828282] rounded-xl p-5 h-[200px]">
+    <div class="aside sticky top-[150px] bg-[#828282] rounded-xl p-5 h-[200px]">
       <ul>
-        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Development</li>
-        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Da'wah</li>
-        <li class="cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black">Solidarity</li>
+        <li class="development cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll1')" tabindex="0">Development</li>
+        <li class="dakwah cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll2')" tabindex="0">Da'wah</li>
+        <li class="solidarity cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll3')" tabindex="0">Solidarity</li>
       </ul>
     </div>
     <div class="article inline-block ml-16">
       <div class="isiArticle">
-        <h4 class="mb-7 font-semibold">Development</h4>
+        <h4 class="batas1 mb-7 font-semibold" ref="scroll1">Development</h4>
         <p class="my-7 text-justify">
           SHAR3 menjadi wadah untuk pembinaan dan pengembangan potensi remaja muslim dalam hal ketakwaan serta kebermanfaatan kepada lingkungan sekitar.
         </p>
         <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#828282] hover:font-semibold">Read More</a>
       </div>
-      <div class="isiArticle my-64">
-        <h4 class="mb-7 font-semibold">Da'wah</h4>
+      
+      <div class="isiArticle my-16">
+        <div class="batas2 h-40"></div>
+        <h4 class="mb-7 font-semibold" ref="scroll2">Da'wah</h4>
         <p class="my-7 text-justify">
           Dakwah menjadi fokus dari program yang diselenggarakan oleh SHAR3. Kegiatan maupun konten disajikan oleh SHAR3 sebagai sarana peningkatan ilmu keagamaan dan keimanan.
         </p>
         <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#6AA121] hover:font-semibold">Read More</a>
       </div>
-      <div class="isiArticle mt-64">
-        <h4 class="mb-7 font-semibold">Solidarity</h4>
+      <div class="isiArticle my-16">
+        <div class="batas3 h-40"></div>
+        <h4 class="mb-7 font-semibold" ref="scroll3">Solidarity</h4>
         <p class="my-7 text-justify">
           SHAR3 memiliki misi kebermanfaatan kepada sesama manusia dengan pelaksanaan kegiatan sosial maupun agenda donasi kemanusiaan kepada yang membutuhkan.
         </p>
@@ -60,6 +63,57 @@ export default {
     tailwind.setAttribute('src', 'https://cdn.tailwindcss.com')
     document.head.appendChild(tailwind)
   },
+  methods: {
+    goto(refName) {
+      var element = this.$refs[refName];
+      const aside = document.querySelector(".aside");
+      const font1 = document.querySelector(".development");
+      const font2 = document.querySelector(".dakwah");
+      const font3 = document.querySelector(".solidarity");
+      if(refName == "scroll1") {
+        aside.style.top = "0";
+        var top = document.querySelector(".batas1").offsetTop;
+      }
+      else if(refName == "scroll2") {
+        aside.style.top = "150px";
+        var top = document.querySelector(".batas2").offsetTop;
+      }
+      else if(refName == "scroll3") {
+        aside.style.top = "150px";
+        var top = document.querySelector(".batas3").offsetTop;
+      }
+      window.scrollTo(0, top);
+      
+
+      if(refName == "scroll1") {
+        aside.style.backgroundColor = '#828282';
+        font1.style.color = 'black';
+        font1.style.backgroundColor = 'white';
+        font2.style.color = 'white';
+        font2.style.backgroundColor = 'unset';
+        font3.style.color = 'white';
+        font3.style.backgroundColor = 'unset';
+      }
+      else if(refName == "scroll2") {
+        aside.style.backgroundColor = '#6AA121';
+        font2.style.color = 'black';
+        font2.style.backgroundColor = 'white';
+        font1.style.color = 'white';
+        font1.style.backgroundColor = 'unset';
+        font3.style.color = 'white';
+        font3.style.backgroundColor = 'unset';
+      }
+      else if(refName == "scroll3") {
+        aside.style.backgroundColor = '#964800';
+        font3.style.color = 'black';
+        font3.style.backgroundColor = 'white';
+        font2.style.color = 'white';
+        font2.style.backgroundColor = 'unset';
+        font1.style.color = 'white';
+        font1.style.backgroundColor = 'unset';
+      }
+    }
+  }
 }
 </script>
 
