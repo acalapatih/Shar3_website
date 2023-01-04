@@ -5,10 +5,10 @@
     <h3 class="text-5xl font-semibold py-24">
       Ayo berkembang bersama<br/>
       <span class="text-[#1D8925]">Sahabat Remaja</span>
-    </h3>
-    <img src="@/assets/imgHero.png" class="inline-block ml-16">
+    </h3> 
+    <img src="@/assets/imgHero.png" class="inline-block ml-10">
   </div>
-  <div class="content flex my-64 mx-56">
+  <div class="content flex my-64 mx-56 md:mx-20">
     <div class="aside sticky top-[150px] bg-[#828282] rounded-xl p-5 h-[200px]">
       <ul>
         <li class="development cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll1')" tabindex="0">Development</li>
@@ -57,11 +57,6 @@ export default {
   components: {
     NavbarComp,
     FooterComp
-  },
-  mounted() {
-    let tailwind = document.createElement('script')
-    tailwind.setAttribute('src', 'https://cdn.tailwindcss.com')
-    document.head.appendChild(tailwind)
   },
   methods: {
     goto(refName) {
@@ -129,13 +124,8 @@ export default {
   height: 350px;
 }
 
-@media only screen and (max-width: 1030px) {
-  .heroComp {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-
-  .heroComp h3{
+@media only screen and (max-width: 1024px) {
+  .heroComp h3 {
     font-size: 26px;
   }
 
@@ -144,13 +134,9 @@ export default {
     height: 290px;
   }
 }
-@media only screen and (max-width: 720px) {
-  .heroComp {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
 
-  .heroComp h3{
+@media only screen and (max-width: 768px) {
+  .heroComp h3 {
     font-size: 18px;
   }
 
@@ -158,21 +144,42 @@ export default {
     width: 270px;
     height: 225px;
   }
+
+  .content {
+    margin: 8rem 5rem;
+  }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 640px) {
   .heroComp {
-    margin: 3rem 2rem;
+    margin: 7rem 1.5rem;
   }
 
-  .heroComp h3{
+  .heroComp h3 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 10px;
+    font-size: 12px;
   }
   
   .heroComp img{
     width: 120px;
     height: 100px;
+    margin-left: 2rem;
+  }
+
+  .content {
+    margin: 2.5rem 1.5rem;
+    font-size: 10px;
+  }
+
+  .aside {
+    padding: 0.5rem;
+    height: 150px;
+  }
+
+  .article {
+    margin-left: 2rem;
+    width: 50%;
   }
 }
 </style>

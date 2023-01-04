@@ -1,6 +1,6 @@
 <template>
 <div class="footer flex-column bg-black text-white">
-    <div class="footerAtas flex mx-20">
+    <div class="footerAtas flex mx-20 lg:mx-16">
         <div class="leftFooter flex inline-block my-16">
             <div class="inline-block">
                 <img src="@/assets/imgFooter.png" class="imgFooter">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="footerBawah">
-        <p class="text-center">© 2022 Sahabat Remaja.</p>
+        <p class="text-center">© 2023 Sahabat Remaja.</p>
         <hr class="my-1">
         <p class="text-right text-sm pb-1 mr-1">Developed by <span class="font-semibold"><a href="instagram.com/@acalapatih">Acalapatih</a></span></p>
     </div>
@@ -52,12 +52,7 @@
 
 <script>
 export default {
-    name: 'FooterComp',
-    mounted() {
-        let tailwind = document.createElement('script')
-        tailwind.setAttribute('src', 'https://cdn.tailwindcss.com')
-        document.head.appendChild(tailwind)
-    },
+    name: 'FooterComp'
 }
 </script>
 
@@ -86,5 +81,87 @@ export default {
 
 hr {
     border: 7px solid #FFFFFF;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footerAtas {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .imgFooter {
+        width: 250px;
+        height: 72px;
+    }
+
+    .aboutUs {
+        margin-left: 2rem;
+    }
+
+    .contactUs {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footerAtas {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .imgFooter {
+        width: 200px;
+        height: 58px;
+    }
+
+    .aboutUs {
+        margin-left: 1.5rem;
+    }
+
+    .contactUs {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .footerAtas {
+        margin: 5rem 3rem;
+        font-size: 10px;
+    }
+
+    .imgFooter {
+        width: 150px;
+        height: 43px;
+    }
+
+    .aboutUs {
+        margin-left: 0.75rem;
+    }
+
+    .rightFooter {
+        position: absolute;
+        margin-top: 11rem;
+        margin-bottom: 11rem;
+    }
+
+    .contactUs {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+
+    .contactUs img {
+        width: 12px;
+    }
+
+    .followUs img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footerBawah {
+        font-size: 14px;
+    }
 }
 </style>

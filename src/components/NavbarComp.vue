@@ -6,16 +6,16 @@
             </div>
             <div class="navbar flex lg:items-center lg:w-auto">
                 <div class="leftNav ml-32">
-                    <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/">
+                    <router-link to="/" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     Home
                     </router-link>
-                    <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/dashboard">
+                    <router-link to="/dashboard" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     Dashboard
                     </router-link>
-                    <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/event">
+                    <router-link to="/eventlist" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     Event
                     </router-link>
-                    <router-link class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4" to="/aboutUs">
+                    <router-link to="/aboutUs" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     About Us
                     </router-link>
                 </div>
@@ -38,12 +38,7 @@ export default {
         menu() {
             document.querySelector('.leftNav').classList.toggle('active-nav')
         }
-    },
-    mounted() {
-        let tailwind = document.createElement('script')
-        tailwind.setAttribute('src', 'https://cdn.tailwindcss.com')
-        document.head.appendChild(tailwind)
-    },
+    }
 }
 </script>
 
