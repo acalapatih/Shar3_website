@@ -8,9 +8,15 @@
             <div class="aboutUs inline-block ml-16">
                 <ul>
                     <li class="font-semibold mb-3"><h5>About Us</h5></li>
-                    <li class="mt-1 cursor-pointer">Event</li>
-                    <li class="mt-1 cursor-pointer">Our Profile</li>
-                    <li class="mt-1 cursor-pointer">Documentation</li>
+                    <router-link to="/eventlist">
+                        <li class="mt-1 cursor-pointer">Event</li>
+                    </router-link>
+                    <router-link to="/aboutus">
+                        <li class="mt-1 cursor-pointer">Our Profile</li>    
+                    </router-link>
+                    <router-link to="/documentation">
+                        <li class="mt-1 cursor-pointer">Documentation</li>
+                    </router-link>
                 </ul>
             </div>
         </div>
@@ -101,6 +107,23 @@ hr {
     .contactUs {
         margin-right: 2rem;
         margin-left: 2rem;
+    }
+
+    .contactUs img {
+        display: none;
+    }
+
+    .contactUs p {
+        margin-left: 0;
+    }
+
+    .followUs img {
+        height: 20px;
+        width: 20px;
+    }
+
+    li {
+        font-size: 12px;
     }
 }
 

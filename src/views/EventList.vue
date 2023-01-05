@@ -171,6 +171,10 @@ export default {
 }
 
 @media only screen and (max-width: 640px) {
+    .header p {
+        font-size: 14px;
+    }
+
     .aside {
         position: absolute;
         margin-left: 0;

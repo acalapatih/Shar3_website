@@ -15,7 +15,7 @@
                     <router-link to="/eventlist" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     Event
                     </router-link>
-                    <router-link to="/aboutUs" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
+                    <router-link to="/aboutus" class="navLink block mt-4 lg:inline-block lg:mt-0 text-black ml-10 hover:font-semibold mr-4">
                     About Us
                     </router-link>
                 </div>
@@ -64,7 +64,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1035px) {
     nav {
         display: flex;
         flex-direction: row;
