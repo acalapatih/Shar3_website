@@ -3,7 +3,9 @@
     <div class="footerAtas flex mx-20 lg:mx-16">
         <div class="leftFooter flex inline-block my-16">
             <div class="inline-block">
-                <img src="@/assets/imgFooter.png" class="imgFooter">
+                <router-link to="/">
+                    <img src="@/assets/imgFooter.png" class="imgFooter" />
+                </router-link>
             </div>
             <div class="aboutUs inline-block ml-16">
                 <ul>

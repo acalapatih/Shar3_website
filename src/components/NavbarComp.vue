@@ -2,7 +2,9 @@
     <div class="main">
         <nav class="flex items-center justify-between bg-[#7BCEA0] p-6 px-16">
             <div class="imgNav flex items-center flex-shrink-0">
-                <img src="@/assets/imgNav.png">
+                <router-link to="/">
+                    <img src="@/assets/imgNav.png" />
+                </router-link>
             </div>
             <div class="navbar flex lg:items-center lg:w-auto">
                 <div class="leftNav ml-32">

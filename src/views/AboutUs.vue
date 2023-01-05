@@ -4,22 +4,22 @@
         <div class="header py-10 px-20 bg-[#E7FEEA]">
             <h3 class="txtHeader font-bold text-2xl">Tentang Kami</h3>
             <p class="my-1 text-justify">
-                Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                Halaman ini berisi profil organisasi Sahabat Remaja (SHAR3)
             </p>
         </div>
         <div class="content flex mx-12">
-            <div class="aside inline-block my-12 mx-8 bg-[#E7FEEA] h-[245px] w-[415px] rounded-2xl p-5">
+            <div class="aside inline-block my-12 mx-8 bg-[#E7FEEA] h-[245px] w-[300px] rounded-2xl p-5">
                 <ul>
                     <router-link to="/articlelist">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Artikel SHAR3</li>
                     </router-link>
-                    <router-link to="calendar">
+                    <router-link to="/calendar">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Kalender SHAR3</li>
                     </router-link>
-                    <router-link to="saqu">
+                    <router-link to="/saqu">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Daftar SAQU</li>
                     </router-link>
-                    <router-link to="documentation">
+                    <router-link to="/documentation">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Dokumentasi</li>
                     </router-link>
                     <router-link to="/shar3store">
@@ -27,7 +27,7 @@
                     </router-link>
                 </ul>
             </div>
-            <div class="article inline-block my-12 mx-12 bg-[#E7FEEA] rounded-2xl py-7 px-10">
+            <div class="article inline-block my-12 mx-12 bg-[#E7FEEA] rounded-2xl py-7 px-10 w-full">
                 <h4 class="font-semibold text-xl">Sahabat Remaja (SHAR3)</h4>
                 <p class="my-2 text-justify">
                     Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.

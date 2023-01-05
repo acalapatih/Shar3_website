@@ -10,24 +10,24 @@
         <div class="content flex mx-12">
             <div class="aside inline-block my-12 mx-8 bg-[#E7FEEA] h-[245px] w-[300px] rounded-2xl p-5">
                 <ul>
-                <router-link to="/articlelist">
-                    <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Artikel SHAR3</li>
-                </router-link>
-                <router-link to="calendar">
-                    <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Kalender SHAR3</li>
-                </router-link>
-                <router-link to="saqu">
-                    <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Daftar SAQU</li>
-                </router-link>
-                <router-link to="documentation">
-                    <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Dokumentasi</li>
-                </router-link>
-                <router-link to="/shar3store">
-                    <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">SHAR3 Store</li>
-                </router-link>
+                    <router-link to="/articlelist">
+                        <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Artikel SHAR3</li>
+                    </router-link>
+                    <router-link to="/calendar">
+                        <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Kalender SHAR3</li>
+                    </router-link>
+                    <router-link to="/saqu">
+                        <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Daftar SAQU</li>
+                    </router-link>
+                    <router-link to="/documentation">
+                        <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Dokumentasi</li>
+                    </router-link>
+                    <router-link to="/shar3store">
+                        <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">SHAR3 Store</li>
+                    </router-link>
                 </ul>
             </div>
-            <div class="article inline-block my-12 mx-12">
+            <div class="article inline-block my-12 mx-12 w-full">
                 <h4 class="txtIsi text-xl font-semibold">Artikel SHAR3</h4>
                 <div class="filter flex my-3">
                     <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Semua Artikel</button>
@@ -41,7 +41,9 @@
                         <p class="text-justify my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        <router-link to="/articledetail">
+                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -51,7 +53,9 @@
                         <p class="text-justify my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        <router-link to="/articledetail">
+                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -61,7 +65,9 @@
                         <p class="text-justify my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        <router-link to="/articledetail">
+                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        </router-link>
                     </div>
                 </div>
             </div>
