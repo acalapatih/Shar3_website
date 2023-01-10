@@ -16,7 +16,7 @@
                     <router-link to="/calendar">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Kalender SHAR3</li>
                     </router-link>
-                    <router-link to="/saqu">
+                    <router-link to="/daftarsaqu">
                         <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Daftar SAQU</li>
                     </router-link>
                     <router-link to="/documentation">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
                 <div class="saqu my-4 mx-4">
-                    <h5 class="font-semibold text-lg">SAQU</h5>
+                    <h5 class="font-semibold text-lg">Sahabat Quran (SAQU)</h5>
                     <div class="visi my-3 mx-6">
                         <h5 class="font-semibold">Visi</h5>
                         <p class="text-justify">

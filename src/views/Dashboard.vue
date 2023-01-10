@@ -21,7 +21,7 @@
           <router-link to="calendar">
             <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Kalender SHAR3</li>
           </router-link>
-          <router-link to="saqu">
+          <router-link to="daftarsaqu">
             <li class="asideList py-2 px-3 font-semibold rounded-md cursor-pointer hover:bg-white">Daftar SAQU</li>
           </router-link>
           <router-link to="documentation">

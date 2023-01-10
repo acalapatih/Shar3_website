@@ -31,7 +31,27 @@ const routes = [
     path: '/articledetail',
     name: 'articledetail',
     component: () => import('../views/ArticleDetail.vue')
-  }
+  },
+  {
+    path: '/calendar',
+    name: 'calendar',
+    component: () => import('../views/Calendar.vue')
+  },
+  {
+    path: '/daftarsaqu',
+    name: 'daftarsaqu',
+    component: () => import('../views/DaftarSaqu.vue')
+  },
+  {
+    path: '/documentation',
+    name: 'documentation',
+    component: () => import('../views/Documentation.vue')
+  },
+  {
+    path: '/shar3store',
+    name: 'shar3store',
+    component: () => import('../views/Shar3Store.vue')
+  },
 ]
 
 const router = createRouter({
