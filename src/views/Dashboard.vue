@@ -102,6 +102,7 @@ export default {
       images: [
         "https://i.ibb.co/1ZtNMgY/img-Header.png",
         "https://i.ibb.co/XF1c7Gs/img-Header2.png",
+        "https://i.ibb.co/Nrt964w/img-Header3.png",
       ],
       timer: null,
       currentIndex: 0

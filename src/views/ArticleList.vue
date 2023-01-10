@@ -4,7 +4,7 @@
         <div class="header py-10 px-20 bg-[#E7FEEA]">
             <h3 class="txtHeader font-bold text-2xl">Artikel</h3>
             <p class="my-1 text-justify">
-                Halaman ini berisikan kumpulan artikel yang ditulis berdasarkan informasi ataupun karya para anggota Shar3.
+                Halaman ini berisikan kumpulan artikel yang ditulis berdasarkan informasi ataupun karya para anggota SHAR3.
             </p>
         </div>
         <div class="content flex mx-12">
