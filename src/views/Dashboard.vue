@@ -37,11 +37,11 @@
         <div class="isi my-8 mx-5">
           <h4 class="my-2 text-lg font-semibold">Event SHAR3</h4>
           <div class="flex">
-            <img src="../assets/imgEvent.jpg" class="inline-block h-[168px] w-[318px]">
+            <img src="../assets/event/imgJaulah.png" class="inline-block rounded-xl h-[168px] w-[318px]">
             <div class="detail inline-block m-5">
-              <h5 class="font-semibold my-2">Judul Event</h5>
+              <h5 class="font-semibold my-2">Jaulah</h5>
               <p class="text-justify">
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@
         <div class="isi my-8 mx-5">
           <h4 class="my-2 text-lg font-semibold">Artikel SHAR3</h4>
           <div class="flex">
-            <img src="../assets/imgArtikel.jpg" class="inline-block h-[168px] w-[318px]">
+            <img src="../assets/imgArtikel.jpg" class="inline-block rounded-xl h-[168px] w-[318px]">
             <div class="detail inline-block m-5">
               <h5 class="font-semibold my-2">Judul Artikel</h5>
               <p class="text-justify">
@@ -68,12 +68,12 @@
           <h4 class="my-2 text-lg font-semibold">Dokumentasi SHAR3</h4>
           <div class="flex">
             <div class="dokumentasi1 inline-block m-5">
-              <img src="../assets/imgEvent.jpg" class="inline-block h-[168px] w-[318px]">
-              <h5 class="text-center font-semibold my-2">Judul Event</h5>
+              <img src="../assets/event/imgUps.png" class="inline-block rounded-xl h-[168px] w-[318px]">
+              <h5 class="text-center font-semibold my-2">UPS (Upgrading Pengurus SHAR3)</h5>
             </div>
             <div class="dokumentasi2 inline-block m-5">
-              <img src="../assets/imgEvent2.jpg" class="inline-block h-[168px] w-[318px]">
-              <h5 class="text-center font-semibold my-2">Judul Event</h5>
+              <img src="../assets/event/imgHargur.png" class="inline-block rounded-xl h-[168px] w-[318px]">
+              <h5 class="text-center font-semibold my-2">Bingkisan Cinta Hari Guru</h5>
             </div>
           </div>
           <router-link to="/article" class="more my-2 cursor-pointer hover:font-semibold">

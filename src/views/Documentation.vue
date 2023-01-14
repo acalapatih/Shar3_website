@@ -27,11 +27,44 @@
                     </router-link>
                 </ul>
             </div>
-            <div class="article inline-block my-12 mx-12 bg-[#E7FEEA] rounded-2xl py-7 px-10 w-full">
+            <div class="article inline-block my-12 mx-12 py-7 px-10 w-full">
                 <h4 class="font-semibold text-xl">Dokumentasi SHAR3</h4>
-                <p class="my-2 text-justify">
-                    Mohon maaf untuk saat ini, halaman ini belum tersedia.
-                </p>
+                <div class="flex">
+                    <div class="img1 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgRaker.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">RAKER (Rapat Kerja)</p>
+                    </div>
+                    <div class="img2 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgSerbu.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">SERBU (Syuro Bulanan)</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="img1 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgUps.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">UPS (Upgrading Pengurus SHAR3)</p>
+                    </div>
+                    <div class="img2 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgCharter.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">CHARTER (Charity Together)</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="img1 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgJaulah.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Jaulah</p>
+                    </div>
+                    <div class="img2 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgSekuy.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">SEKUY (Semangat Berkurban Kuy)</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="img1 inline-block mx-2 my-5">
+                        <img src="../assets/event/imgHargur.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Bingkisan Cinta Hari Guru</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

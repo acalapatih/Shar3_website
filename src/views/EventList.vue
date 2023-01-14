@@ -38,11 +38,44 @@
                     <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">SAQU</button>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <img src="../assets/event/imgRaker.png" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Event</h5>
-                        <p class="text-justify my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        <h5 class="font-semibold">RAKER (Rapat Kerja)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Setiap Divisi SHAR3 mempresentasikan rencana program kerja yang akan dilaksanakan selama satu periode.
+                        </p>
+                        <p>Divisi : BPH</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgSerbu.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">SERBU (Syuro Bulanan)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Pelaporan pelaksanaan Program Kerja terlaksana, tidak terlaksana selama sebulan dan merencanakan Program Kerja untuk bulan selanjutnya.
+                        </p>
+                        <p>Divisi : BPH</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgCharter.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">CHARTER (Charity Together)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Melaksanakan Open Donation untuk membantu kepentingan ummat.
+                        </p>
+                        <p>Divisi : BPH</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgUps.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">UPS (Upgrading Pengurus Shar3)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Memberikan pengarahan tentang bagaimana caranya menjadi pendakwah yang istiqomah dan tak kenal lelah.
                         </p>
                         <p>Divisi : BPH</p>
                         <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
@@ -52,7 +85,7 @@
                     <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
                         <h5 class="font-semibold">Judul Event</h5>
-                        <p class="text-justify my-2 w-[92%]">
+                        <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
                         <p>Divisi : Pembinaan</p>
@@ -60,11 +93,33 @@
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <img src="../assets/event/imgJaulah.png" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Event</h5>
-                        <p class="text-justify my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        <h5 class="font-semibold">Jaulah</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
+                        </p>
+                        <p>Divisi : Program</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgSekuy.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">SEKUY (Semangat Berkurban Kuy)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Melatih ibadah berkurban serta membantu sesama kepada pengurus SHAR3, Anggota Rohis dan masyarakat sekitar yang membutuhkan. 
+                        </p>
+                        <p>Divisi : Program</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgHargur.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Bingkisan Cinta Hari Guru</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Memperingati Hari Guru dan Menjalin Silaturahmi dengan guru SMAN 3 Kabupaten Tangerang.
                         </p>
                         <p>Divisi : Program</p>
                         <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
@@ -74,7 +129,7 @@
                     <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
                         <h5 class="font-semibold">Judul Event</h5>
-                        <p class="text-justify my-2 w-[92%]">
+                        <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
                         <p>Divisi : Humed</p>
@@ -85,7 +140,7 @@
                     <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
                         <h5 class="font-semibold">Judul Event</h5>
-                        <p class="text-justify my-2 w-[92%]">
+                        <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
                         <p>Divisi : SAQU</p>
