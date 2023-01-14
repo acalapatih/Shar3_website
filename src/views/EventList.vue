@@ -29,13 +29,13 @@
             </div>
             <div class="article inline-block my-12 mx-12 w-full">
                 <h4 class="txtIsi text-xl font-semibold">Event SHAR3</h4>
-                <div class="filter flex my-3">
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Semua Event</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">BPH</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Pembinaan</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Program</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Humed</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">SAQU</button>
+                <div class="filter flex flex-wrap my-3">
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Semua Event</button>
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">BPH</button>
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Pembinaan</button>
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Program</button>
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Humed</button>
+                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">SAQU</button>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
                     <img src="../assets/event/imgRaker.png" class="inline-block w-[300px] h-[168px] rounded-lg">
@@ -44,8 +44,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Setiap Divisi SHAR3 mempresentasikan rencana program kerja yang akan dilaksanakan selama satu periode.
                         </p>
-                        <p>Divisi : BPH</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : BPH</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -55,8 +55,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Pelaporan pelaksanaan Program Kerja terlaksana, tidak terlaksana selama sebulan dan merencanakan Program Kerja untuk bulan selanjutnya.
                         </p>
-                        <p>Divisi : BPH</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : BPH</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -66,8 +66,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Melaksanakan Open Donation untuk membantu kepentingan ummat.
                         </p>
-                        <p>Divisi : BPH</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : BPH</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -77,19 +77,74 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Memberikan pengarahan tentang bagaimana caranya menjadi pendakwah yang istiqomah dan tak kenal lelah.
                         </p>
-                        <p>Divisi : BPH</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : BPH</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <img src="../assets/event/imgRekruitmen.png" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Event</h5>
+                        <h5 class="font-semibold">Rekruitmen dan BBM</h5>
                         <p class="text-justify text-sm my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                            Memantau serta mendukung keberlangsungan acara PSB yang diadakan oleh ROHIS & Membentuk kelompok mentoring baru untuk siswa kelas 10.
                         </p>
-                        <p>Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgSekolahCoach.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Sekolah Coach</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Mempersiapkan, menyeleksi coach baru, serta pemberian bekal terkait pembinaan.
+                        </p>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgPemantauanEvent.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Pemantauan Event</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Memantau serta mendukung keberlangsungan acara Rohis SMAN 3 Kabupaten Tangerang yang memiliki kaitan dengan program pembinaan SHAR3.
+                        </p>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgNongskiKuy.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Nongski Kuy</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Mentoring gabungan untuk para pengurus SHAR3.
+                        </p>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgPokemonGo.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Pokemon Go</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Mentoring dalam bentuk games, memasak, dolanan, dan lainnya serta pemberian materi keislaman.
+                        </p>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgRihlah.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Rihlah</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Melakukan kegiatan mentoring dengan konsep rihlah.
+                        </p>
+                        <p class="text-sm">Divisi : Pembinaan</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -99,8 +154,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
                         </p>
-                        <p>Divisi : Program</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : Program</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -110,8 +165,19 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Melatih ibadah berkurban serta membantu sesama kepada pengurus SHAR3, Anggota Rohis dan masyarakat sekitar yang membutuhkan. 
                         </p>
-                        <p>Divisi : Program</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : Program</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                    </div>
+                </div>
+                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/event/imgSilatbar.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">Silatbar (Silaturahmi Akbar)</h5>
+                        <p class="text-justify text-sm my-2 w-[92%]">
+                            Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang. 
+                        </p>
+                        <p class="text-sm">Divisi : Program</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -121,8 +187,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Memperingati Hari Guru dan Menjalin Silaturahmi dengan guru SMAN 3 Kabupaten Tangerang.
                         </p>
-                        <p>Divisi : Program</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : Program</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -132,8 +198,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <p>Divisi : Humed</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : Humed</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -143,8 +209,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <p>Divisi : SAQU</p>
-                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="text-sm">Divisi : SAQU</p>
+                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
             </div>
@@ -204,9 +270,6 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-    .filter {
-        display: none;
-    }
 
     .isi img {
         width: 170px;

@@ -76,7 +76,7 @@
               <h5 class="text-center font-semibold my-2">Bingkisan Cinta Hari Guru</h5>
             </div>
           </div>
-          <router-link to="/article" class="more my-2 cursor-pointer hover:font-semibold">
+          <router-link to="/documentation" class="more my-2 cursor-pointer hover:font-semibold">
             <p>Lihat Dokumentasi lainnya...</p>
           </router-link>
         </div>

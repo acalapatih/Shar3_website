@@ -46,30 +46,6 @@
                         </router-link>
                     </div>
                 </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/imgArtikel.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Artikel</h5>
-                        <p class="text-justify my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                        </p>
-                        <router-link to="/articledetail">
-                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
-                        </router-link>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/imgArtikel.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Artikel</h5>
-                        <p class="text-justify my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                        </p>
-                        <router-link to="/articledetail">
-                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
-                        </router-link>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -29,40 +29,62 @@
             </div>
             <div class="article inline-block my-12 mx-12 py-7 px-10 w-full">
                 <h4 class="font-semibold text-xl">Dokumentasi SHAR3</h4>
-                <div class="flex">
-                    <div class="img1 inline-block mx-2 my-5">
+                <div class="flex flex-wrap">
+                    <div class="img1 mx-2 my-5">
                         <img src="../assets/event/imgRaker.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">RAKER (Rapat Kerja)</p>
                     </div>
-                    <div class="img2 inline-block mx-2 my-5">
+                    <div class="img2 mx-2 my-5">
                         <img src="../assets/event/imgSerbu.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">SERBU (Syuro Bulanan)</p>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="img1 inline-block mx-2 my-5">
+                    <div class="img1 mx-2 my-5">
                         <img src="../assets/event/imgUps.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">UPS (Upgrading Pengurus SHAR3)</p>
                     </div>
-                    <div class="img2 inline-block mx-2 my-5">
+                    <div class="img2 mx-2 my-5">
                         <img src="../assets/event/imgCharter.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">CHARTER (Charity Together)</p>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="img1 inline-block mx-2 my-5">
+                    <div class="img1 mx-2 my-5">
+                        <img src="../assets/event/imgRekruitmen.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Rekruitmen</p>
+                    </div>
+                    <div class="img2 mx-2 my-5">
+                        <img src="../assets/event/imgSekolahCoach.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Sekolah Coach</p>
+                    </div>
+                    <div class="img1 mx-2 my-5">
+                        <img src="../assets/event/imgPemantauanEvent.png" class="rounded-xl bord">
+                        <p class="font-semibold text-center my-1">Pemantauan Event</p>
+                    </div>
+                    <div class="img2 mx-2 my-5">
+                        <img src="../assets/event/imgNongskiKuy.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Nongski Kuy</p>
+                    </div>
+                    <div class="img1 mx-2 my-5">
+                        <img src="../assets/event/imgPokemonGo.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Pokemon Go</p>
+                    </div>
+                    <div class="img2 mx-2 my-5">
+                        <img src="../assets/event/imgRihlah.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Rihlah</p>
+                    </div>
+                    <div class="img1 mx-2 my-5">
                         <img src="../assets/event/imgJaulah.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">Jaulah</p>
                     </div>
-                    <div class="img2 inline-block mx-2 my-5">
+                    <div class="img2 mx-2 my-5">
                         <img src="../assets/event/imgSekuy.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">SEKUY (Semangat Berkurban Kuy)</p>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="img1 inline-block mx-2 my-5">
+                    <div class="img1 mx-2 my-5">
                         <img src="../assets/event/imgHargur.png" class="rounded-xl">
                         <p class="font-semibold text-center my-1">Bingkisan Cinta Hari Guru</p>
+                    </div>
+                    <div class="img2 mx-2 my-5">
+                        <img src="../assets/event/imgSilatbar.png" class="rounded-xl">
+                        <p class="font-semibold text-center my-1">Silatbar (Silaturahmi Akbar)</p>
                     </div>
                 </div>
             </div>
