@@ -29,169 +29,45 @@
             </div>
             <div class="article inline-block my-12 mx-12 w-full">
                 <h4 class="txtIsi text-xl font-semibold">Event SHAR3</h4>
-                <div class="filter flex flex-wrap my-3">
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Semua Event</button>
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">BPH</button>
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Pembinaan</button>
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Program</button>
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Humed</button>
-                    <button class="mr-3 my-2 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">SAQU</button>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgRaker.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                <select name="category" id="category" v-model="selectedCategory" class="mt-2 p-2 bg-[#289928] rounded-xl font-semibold text-white hover:bg-[#006400] active:bg-[#006400] cursor-pointer">
+                    <option v-for="category in categories" v-bind:value="category.id" class="bg-[#289928] rounded-xl font-semibold text-white hover:bg-[#006400] active:bg-[#006400] cursor-pointer">
+                    {{ category.name }}
+                    </option>
+                </select>
+                <div v-show="selectedCategory == 0 | selectedCategory == 1" v-for="bph in resultQuery1" :key="bph.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img :src=bph.img class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">RAKER (Rapat Kerja)</h5>
+                        <h5 class="font-semibold">{{ bph.title }}</h5>
                         <p class="text-justify text-sm my-2 w-[92%]">
-                            Setiap Divisi SHAR3 mempresentasikan rencana program kerja yang akan dilaksanakan selama satu periode.
+                            {{ bph.desc }}
                         </p>
-                        <p class="text-sm">Divisi : BPH</p>
+                        <p class="text-sm">Divisi : {{ bph.divisi }}</p>
                         <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgSerbu.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                <div v-show="selectedCategory == 0 | selectedCategory == 2" v-for="pembinaan in resultQuery2" :key="pembinaan.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img :src=pembinaan.img class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">SERBU (Syuro Bulanan)</h5>
+                        <h5 class="font-semibold">{{ pembinaan.title }}</h5>
                         <p class="text-justify text-sm my-2 w-[92%]">
-                            Pelaporan pelaksanaan Program Kerja terlaksana, tidak terlaksana selama sebulan dan merencanakan Program Kerja untuk bulan selanjutnya.
+                            {{ pembinaan.desc }}
                         </p>
-                        <p class="text-sm">Divisi : BPH</p>
+                        <p class="text-sm">Divisi : {{ pembinaan.divisi }}</p>
                         <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgCharter.png" class="inline-block w-[300px] h-[168px] rounded-lg">
+                <div v-show="selectedCategory == 0 | selectedCategory == 3" v-for="program in resultQuery3" :key="program.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img :src=program.img class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">CHARTER (Charity Together)</h5>
+                        <h5 class="font-semibold">{{ program.title }}</h5>
                         <p class="text-justify text-sm my-2 w-[92%]">
-                            Melaksanakan Open Donation untuk membantu kepentingan ummat.
+                            {{ program.desc }}
                         </p>
-                        <p class="text-sm">Divisi : BPH</p>
+                        <p class="text-sm">Divisi : {{ program.divisi }}</p>
                         <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgUps.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">UPS (Upgrading Pengurus Shar3)</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Memberikan pengarahan tentang bagaimana caranya menjadi pendakwah yang istiqomah dan tak kenal lelah.
-                        </p>
-                        <p class="text-sm">Divisi : BPH</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgRekruitmen.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Rekruitmen dan BBM</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Memantau serta mendukung keberlangsungan acara PSB yang diadakan oleh ROHIS & Membentuk kelompok mentoring baru untuk siswa kelas 10.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgSekolahCoach.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Sekolah Coach</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Mempersiapkan, menyeleksi coach baru, serta pemberian bekal terkait pembinaan.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgPemantauanEvent.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Pemantauan Event</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Memantau serta mendukung keberlangsungan acara Rohis SMAN 3 Kabupaten Tangerang yang memiliki kaitan dengan program pembinaan SHAR3.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgNongskiKuy.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Nongski Kuy</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Mentoring gabungan untuk para pengurus SHAR3.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgPokemonGo.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Pokemon Go</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Mentoring dalam bentuk games, memasak, dolanan, dan lainnya serta pemberian materi keislaman.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgRihlah.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Rihlah</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Melakukan kegiatan mentoring dengan konsep rihlah.
-                        </p>
-                        <p class="text-sm">Divisi : Pembinaan</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgJaulah.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Jaulah</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
-                        </p>
-                        <p class="text-sm">Divisi : Program</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgSekuy.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">SEKUY (Semangat Berkurban Kuy)</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Melatih ibadah berkurban serta membantu sesama kepada pengurus SHAR3, Anggota Rohis dan masyarakat sekitar yang membutuhkan. 
-                        </p>
-                        <p class="text-sm">Divisi : Program</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgSilatbar.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Silatbar (Silaturahmi Akbar)</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang. 
-                        </p>
-                        <p class="text-sm">Divisi : Program</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
-                    <img src="../assets/event/imgHargur.png" class="inline-block w-[300px] h-[168px] rounded-lg">
-                    <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Bingkisan Cinta Hari Guru</h5>
-                        <p class="text-justify text-sm my-2 w-[92%]">
-                            Memperingati Hari Guru dan Menjalin Silaturahmi dengan guru SMAN 3 Kabupaten Tangerang.
-                        </p>
-                        <p class="text-sm">Divisi : Program</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
-                    </div>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                <div v-show="selectedCategory == 0 | selectedCategory == 4" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
                     <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
                         <h5 class="font-semibold">Judul Event</h5>
@@ -202,7 +78,7 @@
                         <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                <div v-show="selectedCategory == 0 | selectedCategory == 5" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
                     <img src="../assets/imgEvent2.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
                         <h5 class="font-semibold">Judul Event</h5>
@@ -222,13 +98,65 @@
 <script>
 import NavbarComp from '@/components/NavbarComp.vue'
 import FooterComp from '@/components/FooterComp.vue'
+import { vShow } from 'vue';
 
 export default {
-  name: 'eventlist',
-  components: {
-    NavbarComp,
-    FooterComp
-  },
+    name: 'eventlist',
+    components: {
+        NavbarComp,
+        FooterComp
+    },
+    data() {
+        return {
+            searchQuery: null,
+            bph: [
+                {id: 1, img:"https://i.ibb.co/fYyrf5N/imgRaker.png", title:"RAKER (Rapat Kerja)", desc:"Setiap Divisi SHAR3 mempresentasikan rencana program kerja yang akan dilaksanakan selama satu periode.", divisi: "BPH"},
+                {id: 2, img:"https://i.ibb.co/VVwY3VK/imgSerbu.png", title:"SERBU (Syuro Bulanan)", desc:"Pelaporan pelaksanaan Program Kerja terlaksana, tidak terlaksana selama sebulan dan merencanakan Program Kerja untuk bulan selanjutnya.", divisi: "BPH"},
+                {id: 3, img:"https://i.ibb.co/ryRSyy9/img-Charter.png", title:"CHARTER (Charity Together)", desc:"Melaksanakan Open Donation untuk membantu kepentingan ummat.", divisi: "BPH"},
+                {id: 4, img:"https://i.ibb.co/ZzWd32H/imgUps.png", title:"UPS (Upgrading Pengurus Shar3)", desc:"Memberikan pengarahan tentang bagaimana caranya menjadi pendakwah yang istiqomah dan tak kenal lelah.", divisi: "BPH"},
+            ],
+            pembinaan: [
+                {id: 1, img:"https://i.ibb.co/yyNW0cP/img-Rekruitmen.png", title:"Rekruitmen dan BBM", desc:"Memantau serta mendukung keberlangsungan acara PSB yang diadakan oleh ROHIS & Membentuk kelompok mentoring baru untuk siswa kelas 10.", divisi: "Pembinaan"},
+                {id: 2, img:"https://i.ibb.co/8bggnC4/img-Sekolah-Coach.png", title:"Sekolah Coach", desc:"Mempersiapkan, menyeleksi coach baru, serta pemberian bekal terkait pembinaan.", divisi: "Pembinaan"},
+                {id: 3, img:"https://i.ibb.co/YNsNC5T/img-Pemantauan-Event.png", title:"Pemantauan Event", desc:"Memantau serta mendukung keberlangsungan acara Rohis SMAN 3 Kabupaten Tangerang yang memiliki kaitan dengan program pembinaan SHAR3.", divisi: "Pembinaan"},
+                {id: 4, img:"https://i.ibb.co/HB7nzQj/img-Nongski-Kuy.png", title:"Nongski Kuy", desc:"Mentoring gabungan untuk para pengurus SHAR3.", divisi: "Pembinaan"},
+                {id: 5, img:"https://i.ibb.co/fFHgDBj/img-Pokemon-Go.png", title:"Pokemon Go", desc:"Mentoring dalam bentuk games, memasak, dolanan, dan lainnya serta pemberian materi keislaman.", divisi: "Pembinaan"},
+                {id: 6, img:"https://i.ibb.co/pn2Lj4d/img-Rihlah.png", title:"Rihlah", desc:"Melakukan kegiatan mentoring dengan konsep rihlah.", divisi: "Pembinaan"},
+            ],
+            program: [
+                {id: 1, img:"https://i.ibb.co/QNkYF6y/img-Jaulah.png", title:"Jaulah", desc:"Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.", divisi: "Program"},
+                {id: 2, img:"https://i.ibb.co/Bg4JFLz/imgSekuy.png", title:"SEKUY (Semangat Berkurban Kuy)", desc:"Melatih ibadah berkurban serta membantu sesama kepada pengurus SHAR3, Anggota Rohis dan masyarakat sekitar yang membutuhkan.", divisi: "Program"},
+                {id: 3, img:"https://i.ibb.co/jf24gp1/img-Silatbar.png", title:"Silatbar (Silaturahmi Akbar)", desc:"Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang.", divisi: "Program"},
+                {id: 4, img:"https://i.ibb.co/80sXcMV/img-Hargur.png", title:"Bingkisan Cinta Hari Guru", desc:"Memperingati Hari Guru dan Menjalin Silaturahmi dengan guru SMAN 3 Kabupaten Tangerang.", divisi: "Program"},
+            ],
+            categories: [
+                { id: 0, name: "Semua Event" },
+                { id: 1, name: "BPH" }, 
+                { id: 2, name: "Pembinaan" },
+                { id: 3, name: "Program" },
+                { id: 4, name: "Humed" },
+                { id: 5, name: "SAQU" }
+            ],
+            selectedCategory: "",
+        };
+    },
+    mounted() {
+        this.selectedCategory = 0;
+    },
+    computed: {
+        resultQuery1() {
+            return this.bph;
+        },
+        resultQuery2() {
+            return this.pembinaan;
+        },
+        resultQuery3() {
+            return this.program;
+        },
+        filteredItems: function() {
+            return el.category_id === this.selectedCategory;
+        }
+    }
 }
 </script>
 

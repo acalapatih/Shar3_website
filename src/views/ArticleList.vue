@@ -29,18 +29,32 @@
             </div>
             <div class="article inline-block my-12 mx-12 w-full">
                 <h4 class="txtIsi text-xl font-semibold">Artikel SHAR3</h4>
-                <div class="filter flex my-3">
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Semua Artikel</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Berita</button>
-                    <button class="inline-block mr-3 p-2 bg-[#289928] rounded-2xl font-semibold text-white hover:bg-[#006400] focus:bg-[#006400]">Blog</button>
-                </div>
-                <div class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                <select name="category" id="category" v-model="selectedCategory" class="mt-2 p-2 bg-[#289928] rounded-xl font-semibold text-white hover:bg-[#006400] active:bg-[#006400] cursor-pointer">
+                    <option v-for="category in categories" v-bind:value="category.id" class="bg-[#289928] rounded-xl font-semibold text-white hover:bg-[#006400] active:bg-[#006400] cursor-pointer">
+                    {{ category.name }}
+                    </option>
+                </select>
+                <div v-show="selectedCategory == 0 | selectedCategory == 1" v-for="blog in resultQuery1" :key="blog.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
                     <img src="../assets/imgArtikel.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
                     <div class="detail inline-block ml-3">
-                        <h5 class="font-semibold">Judul Artikel</h5>
-                        <p class="text-justify my-2 w-[92%]">
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                        <h5 class="font-semibold">{{ blog.title }}</h5>
+                        <p class="desc text-justify my-2 w-[92%]">
+                            {{ blog.desc }}
                         </p>
+                        <p class="text-sm text-center font-semibold p-1 rounded-lg bg-slate-400 w-[50px]">{{ blog.jenis }}</p>
+                        <router-link to="/articledetail">
+                            <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
+                        </router-link>
+                    </div>
+                </div>
+                <div v-show="selectedCategory == 0 | selectedCategory == 2" v-for="berita in resultQuery2" :key="berita.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
+                    <img src="../assets/imgArtikel.jpg" class="inline-block w-[300px] h-[168px] rounded-lg">
+                    <div class="detail inline-block ml-3">
+                        <h5 class="font-semibold">{{ berita.title }}</h5>
+                        <p class="desc text-justify my-2 w-[92%]">
+                            {{ berita.desc }}
+                        </p>
+                        <p class="text-sm text-center font-semibold p-1 rounded-lg bg-slate-400 w-[55px]">{{ berita.jenis }}</p>
                         <router-link to="/articledetail">
                             <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Baca Selengkapnya</button>
                         </router-link>
@@ -57,11 +71,41 @@ import NavbarComp from '@/components/NavbarComp.vue'
 import FooterComp from '@/components/FooterComp.vue'
 
 export default {
-  name: 'articlelist',
-  components: {
-    NavbarComp,
-    FooterComp
-  },
+    name: 'articlelist',
+    components: {
+        NavbarComp,
+        FooterComp
+    },
+    data() {
+        return {
+            categories: [
+                { id: 0, name: "Semua Artikel" },
+                { id: 1, name: "Blog" }, 
+                { id: 2, name: "Berita" }
+            ],
+            selectedCategory: "",
+            blog: [
+                {id: 1, img:"https://i.ibb.co/fYyrf5N/imgRaker.png", title:"Judul Berita", desc:"Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.", jenis: "Blog"},
+            ],
+            berita: [
+                {id: 1, img:"https://i.ibb.co/fYyrf5N/imgRaker.png", title:"Judul Berita", desc:"Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.", jenis: "Berita"},
+            ],
+        };
+    },
+    mounted() {
+        this.selectedCategory = 0;
+    },
+    computed: {
+        filteredItems: function() {
+            return el.category_id === this.selectedCategory;
+        },
+        resultQuery1() {
+            return this.blog;
+        },
+        resultQuery2() {
+            return this.berita;
+        },
+    }
 }
 </script>
 
@@ -115,7 +159,7 @@ export default {
         margin-bottom: 0;
     }
 
-    .detail p {
+    .detail .desc {
         width: 170px;
     }
 }
@@ -143,7 +187,7 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .detail p {
+    .detail .desc {
         width: 100%;
     }
 }
