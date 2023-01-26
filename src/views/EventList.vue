@@ -41,8 +41,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             {{ bph.desc }}
                         </p>
-                        <p class="text-sm">Divisi : {{ bph.divisi }}</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="divisi">Divisi : {{ bph.divisi }}</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div v-show="selectedCategory == 0 | selectedCategory == 2" v-for="pembinaan in resultQuery2" :key="pembinaan.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -52,8 +52,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             {{ pembinaan.desc }}
                         </p>
-                        <p class="text-sm">Divisi : {{ pembinaan.divisi }}</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="divisi">Divisi : {{ pembinaan.divisi }}</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div v-show="selectedCategory == 0 | selectedCategory == 3" v-for="program in resultQuery3" :key="program.id" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -63,8 +63,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             {{ program.desc }}
                         </p>
-                        <p class="text-sm">Divisi : {{ program.divisi }}</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="divisi">Divisi : {{ program.divisi }}</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div v-show="selectedCategory == 0 | selectedCategory == 4" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -74,8 +74,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <p class="text-sm">Divisi : Humed</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="divisi">Divisi : Humed</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
                 <div v-show="selectedCategory == 0 | selectedCategory == 5" class="isi flex my-10 bg-[#184064] p-5 rounded-xl text-white">
@@ -85,8 +85,8 @@
                         <p class="text-justify text-sm my-2 w-[92%]">
                             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
                         </p>
-                        <p class="text-sm">Divisi : SAQU</p>
-                        <button class="my-1 p-1 text-sm rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
+                        <p class="divisi">Divisi : SAQU</p>
+                        <button class="my-1 p-1 rounded-xl bg-white text-black hover:font-semibold">Lihat Jadwal</button>
                     </div>
                 </div>
             </div>
@@ -239,8 +239,21 @@ export default {
         margin-bottom: 2rem;
     }
 
+    .detail h5 {
+        font-size: 16px;
+    }
+
     .detail p {
+        font-size: 14px;
         width: 100%;
+    }
+
+    .detail .divisi {
+        font-size: 15px;
+    }
+
+    .detail button {
+        font-size: 15px;
     }
 }
 </style>

@@ -102,8 +102,8 @@ nav {
 }
 @media only screen and (max-width: 500px) {
     nav {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .imgNav {
         width: 30%;

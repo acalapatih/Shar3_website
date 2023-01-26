@@ -1,7 +1,7 @@
 <template>
 <NavbarComp />
 <div class="main">
-  <div class="heroComp flex mx-10 my-48">
+  <div class="heroComp flex mx-20 my-48">
     <h3 class="text-5xl font-semibold py-24">
       Ayo berkembang bersama<br/>
       <span class="text-[#1D8925]">Sahabat Remaja</span>
@@ -11,35 +11,35 @@
   <div class="content flex my-64 mx-56 md:mx-20">
     <div class="aside sticky top-[150px] bg-[#828282] rounded-xl p-5 h-[200px]">
       <ul>
-        <li class="development cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll1')" tabindex="0">Development</li>
-        <li class="dakwah cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll2')" tabindex="0">Da'wah</li>
-        <li class="solidarity cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll3')" tabindex="0">Solidarity</li>
+        <li class="development font-semibold cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll1')" tabindex="0">Development</li>
+        <li class="dakwah font-semibold cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll2')" tabindex="0">Da'wah</li>
+        <li class="solidarity font-semibold cursor-pointer my-2 py-2 px-3 text-white rounded-md hover:bg-white hover:text-black" @click="goto('scroll3')" tabindex="0">Solidarity</li>
       </ul>
     </div>
     <div class="article inline-block ml-16">
       <div class="isiArticle">
-        <h4 class="batas1 mb-7 font-semibold" ref="scroll1">Development</h4>
-        <p class="my-7 text-justify">
+        <h4 class="batas1 mb-7 font-semibold text-xl" ref="scroll1">Development</h4>
+        <p class="my-7 text-justify text-lg">
           SHAR3 menjadi wadah untuk pembinaan dan pengembangan potensi remaja muslim dalam hal ketakwaan serta kebermanfaatan kepada lingkungan sekitar.
         </p>
-        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#828282] hover:font-semibold">Read More</a>
+        <router-link to="/dashboard" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#828282] hover:font-semibold">Pelajari Lebih Lanjut</router-link>
       </div>
       
       <div class="isiArticle my-16">
         <div class="batas2 h-40"></div>
-        <h4 class="mb-7 font-semibold" ref="scroll2">Da'wah</h4>
-        <p class="my-7 text-justify">
+        <h4 class="mb-7 font-semibold text-xl" ref="scroll2">Da'wah</h4>
+        <p class="my-7 text-justify text-lg">
           Dakwah menjadi fokus dari program yang diselenggarakan oleh SHAR3. Kegiatan maupun konten disajikan oleh SHAR3 sebagai sarana peningkatan ilmu keagamaan dan keimanan.
         </p>
-        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#6AA121] hover:font-semibold">Read More</a>
+        <router-link to="/dashboard" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#6AA121] hover:font-semibold">Pelajari Lebih Lanjut</router-link>
       </div>
       <div class="isiArticle my-16">
         <div class="batas3 h-40"></div>
-        <h4 class="mb-7 font-semibold" ref="scroll3">Solidarity</h4>
-        <p class="my-7 text-justify">
+        <h4 class="mb-7 font-semibold text-xl" ref="scroll3">Solidarity</h4>
+        <p class="my-7 text-justify text-lg">
           SHAR3 memiliki misi kebermanfaatan kepada sesama manusia dengan pelaksanaan kegiatan sosial maupun agenda donasi kemanusiaan kepada yang membutuhkan.
         </p>
-        <a href="#" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#964800] hover:font-semibold">Read More</a>
+        <router-link to="/dashboard" class="cursor-pointer text-white my-5 py-2 px-3 rounded-md bg-[#964800] hover:font-semibold">Pelajari Lebih Lanjut</router-link>
       </div>
     </div>
   </div>
@@ -82,30 +82,12 @@ export default {
 
       if(refName == "scroll1") {
         aside.style.backgroundColor = '#828282';
-        font1.style.color = 'black';
-        font1.style.backgroundColor = 'white';
-        font2.style.color = 'white';
-        font2.style.backgroundColor = 'unset';
-        font3.style.color = 'white';
-        font3.style.backgroundColor = 'unset';
       }
       else if(refName == "scroll2") {
         aside.style.backgroundColor = '#6AA121';
-        font2.style.color = 'black';
-        font2.style.backgroundColor = 'white';
-        font1.style.color = 'white';
-        font1.style.backgroundColor = 'unset';
-        font3.style.color = 'white';
-        font3.style.backgroundColor = 'unset';
       }
       else if(refName == "scroll3") {
         aside.style.backgroundColor = '#964800';
-        font3.style.color = 'black';
-        font3.style.backgroundColor = 'white';
-        font2.style.color = 'white';
-        font2.style.backgroundColor = 'unset';
-        font1.style.color = 'white';
-        font1.style.backgroundColor = 'unset';
       }
     }
   }
@@ -158,13 +140,13 @@ export default {
   .heroComp h3 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-size: 12px;
+    font-size: 16px;
   }
   
   .heroComp img{
     width: 120px;
     height: 100px;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
 
   .content {
@@ -178,8 +160,16 @@ export default {
   }
 
   .article {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     width: 50%;
+  }
+
+  .isiArticle h4 {
+    font-size: 14px;
+  }
+
+  .isiArticle p {
+    font-size: 12px;
   }
 }
 </style>

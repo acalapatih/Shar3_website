@@ -131,11 +131,6 @@ export default {
         margin-right: 1rem;
     }
 
-    .filter {
-        margin-right: 0;
-        font-size: 12px;
-    }
-
     .isi img {
         width: 200px;
         height: 112px;
@@ -143,6 +138,10 @@ export default {
 
     .isi {
         font-size: 12px;
+    }
+
+    .detail h5 {
+        font-size: 18px;
     }
 }
 
@@ -187,8 +186,21 @@ export default {
         margin-bottom: 2rem;
     }
 
+    .detail h5 {
+        font-size: 16px;
+    }
+
+    .detail p {
+        font-size: 15px;
+    }
+
     .detail .desc {
+        font-size: 14px;
         width: 100%;
     }
+
+    .detail button {
+        font-size: 15px;
+    }    
 }
 </style>
