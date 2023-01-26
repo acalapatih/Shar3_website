@@ -153,11 +153,17 @@ export default {
     .article {
         position: relative;
         margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin-top: 20rem;
     }
 
+    .article h4 {
+        font-size: 18px;
+    }
+
     .article p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 </style>

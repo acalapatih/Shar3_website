@@ -233,6 +233,10 @@ export default {
         margin: 0;
         margin-top: 20rem;
     }
+
+    .article h4 {
+        font-size: 18px;
+    }
     
     .isi {
         margin-top: 1rem;

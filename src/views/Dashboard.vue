@@ -35,7 +35,7 @@
       <div class="article absolute mt-[-6rem] ml-64 mr-20 bg-[#E7FEEA] rounded-3xl p-10 z-10">
         <h3 class="title font-bold text-2xl">Dashboard</h3>
         <div class="isi my-8 mx-5">
-          <h4 class="my-2 text-lg font-semibold">Event SHAR3</h4>
+          <h4 class="my-2 text-xl font-semibold">Event SHAR3</h4>
           <div class="flex">
             <img src="../assets/event/imgJaulah.png" class="inline-block rounded-xl h-[168px] w-[318px]">
             <div class="detail inline-block m-5">
@@ -43,14 +43,15 @@
               <p class="text-justify">
                 Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
               </p>
+              <router-link to="/eventlist" class="more inline-block my-2 cursor-pointer hover:font-semibold">
+                <p>Lihat Event lainnya...</p>
+              </router-link>
             </div>
           </div>
-          <router-link to="/eventlist" class="more my-2 cursor-pointer hover:font-semibold">
-            <p>Lihat Event lainnya...</p>
-          </router-link>
+          
         </div>
-        <div class="isi my-8 mx-5">
-          <h4 class="my-2 text-lg font-semibold">Artikel SHAR3</h4>
+        <div class="isi my-10 mx-5">
+          <h4 class="my-2 text-xl font-semibold">Artikel SHAR3</h4>
           <div class="flex">
             <img src="../assets/imgArtikel.jpg" class="inline-block rounded-xl h-[168px] w-[318px]">
             <div class="detail inline-block m-5">
@@ -58,14 +59,14 @@
               <p class="text-justify">
                 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
               </p>
+              <router-link to="/articlelist" class="more inline-block my-2 cursor-pointer hover:font-semibold">
+                <p>Lihat Event lainnya...</p>
+              </router-link>
             </div>
           </div>
-          <router-link to="/articlelist" class="more my-2 cursor-pointer hover:font-semibold">
-            <p>Lihat Artikel lainnya...</p>
-          </router-link>
         </div>
-        <div class="isi mt-8 mx-5">
-          <h4 class="my-2 text-lg font-semibold">Dokumentasi SHAR3</h4>
+        <div class="isi mt-10 mx-5">
+          <h4 class="my-2 text-xl font-semibold">Dokumentasi SHAR3</h4>
           <div class="flex">
             <div class="dokumentasi1 inline-block m-5">
               <img src="../assets/event/imgUps.png" class="inline-block rounded-xl h-[168px] w-[318px]">
@@ -208,7 +209,7 @@ export default {
     margin-top: 0;
   }
 
-  .more p,
+  .more,
   .dokumentasi1 h5,
   .dokumentasi2 h5 {
     font-size: 12px;
@@ -259,17 +260,36 @@ export default {
   .article {
     position: relative;
     margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 20rem;
+  }
+
+  .article h4 {
+    font-size: 18px;
   }
 
   .isi{
     margin-left: 0;
+    margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
   .detail {
     margin-left: 0;
     margin-bottom: 3rem;
+  }
+
+  .detail h5 {
+    font-size: 14px;
+  }
+
+  .detail p {
+    font-size: 13px;
+  }
+
+  .more p {
+    font-size: 13px;
   }
 
   .space {

@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="article inline-block my-12 mx-12 bg-[#E7FEEA] rounded-2xl py-7 px-10 w-full">
-                <h4 class="font-semibold text-xl">Sahabat Remaja (SHAR3)</h4>
+                <h4 class="font-semibold text-xl">Sahabat Remaja <br>(SHAR3)<br/></h4>
                 <p class="my-2 text-justify">
                     Sahabat Remaja (SHAR3) adalah organisasi yang dibentuk oleh forum alumni Rohis SMAN 3 Kabupaten Tangerang. Organisasi ini berdiri sejak tahun 2018 dengan misi untuk mempererat silaturahmi antar alumni Rohis, membina Rohis, dan memberi kebermanfaatan kepada masyarakat melalui berbagai program kerja.
                 </p>
@@ -61,17 +61,17 @@
                     Ada lima divisi di dalam organisasi SHAR3 yang memiliki visi dan misinya sendiri untuk memberikan kebermanfaatan bagi internal maupun eksternal.
                 </p>
                 <div class="bph my-4 mx-4">
-                    <h5 class="font-semibold text-lg">BPH (Badan Pengurus Harian)</h5>
+                    <h5 class="font-semibold text-lg">BPH <br>(Badan Pengurus Harian)<br/></h5>
                     <div class="visi my-3 mx-6">
                         <h5 class="font-semibold">Visi</h5>
                         <p class="text-justify">
-                            Mengawasi, melancarkandan mengevaluasiseluruh program kerja setiap divisi.
+                            Mengawasi, melancarkan dan mengevaluasi seluruh program kerja setiap divisi.
                         </p>
                     </div>
                     <div class="misi my-3 mx-6">
                         <h5 class="font-semibold">Misi</h5>
                         <p class="text-justify">
-                            1. Mempererat ukhuwah Islamiya antar pengurus SHAR3. <br/>
+                            1. Mempererat ukhuwah Islamiyah antar pengurus SHAR3. <br/>
                             2. Mengembangkan kreativitas, minat dan bakat sesuai dengan divisi masing-masing.
                         </p>
                     </div>
@@ -213,7 +213,27 @@ export default {
     .article {
         position: relative;
         margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         margin-top: 20rem;
+    }
+
+    .article h4 {
+        font-size: 18px;
+    }
+
+    .article h5 {
+        font-size: 14px;
+    }
+
+    .article p {
+        font-size: 12px;
+    }
+
+    .visi,
+    .misi {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .article p {
