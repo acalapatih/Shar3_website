@@ -116,7 +116,7 @@ export default {
                 {id: 4, img:"https://i.ibb.co/ZzWd32H/imgUps.png", title:"UPS (Upgrading Pengurus Shar3)", desc:"Memberikan pengarahan tentang bagaimana caranya menjadi pendakwah yang istiqomah dan tak kenal lelah.", divisi: "BPH"},
             ],
             pembinaan: [
-                {id: 1, img:"https://i.ibb.co/yyNW0cP/img-Rekruitmen.png", title:"Rekruitmen dan BBM", desc:"Memantau serta mendukung keberlangsungan acara PSB yang diadakan oleh ROHIS & Membentuk kelompok mentoring baru untuk siswa kelas 10.", divisi: "Pembinaan"},
+                {id: 1, img:"https://i.ibb.co/yyNW0cP/img-Rekruitmen.png", title:"Rekruitmen dan BBM", desc:"Memantau serta mendukung keberlangsungan acara PSB yang diadakan oleh Rohis & Membentuk kelompok mentoring baru untuk siswa kelas 10.", divisi: "Pembinaan"},
                 {id: 2, img:"https://i.ibb.co/8bggnC4/img-Sekolah-Coach.png", title:"Sekolah Coach", desc:"Mempersiapkan, menyeleksi coach baru, serta pemberian bekal terkait pembinaan.", divisi: "Pembinaan"},
                 {id: 3, img:"https://i.ibb.co/YNsNC5T/img-Pemantauan-Event.png", title:"Pemantauan Event", desc:"Memantau serta mendukung keberlangsungan acara Rohis SMAN 3 Kabupaten Tangerang yang memiliki kaitan dengan program pembinaan SHAR3.", divisi: "Pembinaan"},
                 {id: 4, img:"https://i.ibb.co/HB7nzQj/img-Nongski-Kuy.png", title:"Nongski Kuy", desc:"Mentoring gabungan untuk para pengurus SHAR3.", divisi: "Pembinaan"},
@@ -126,7 +126,7 @@ export default {
             program: [
                 {id: 1, img:"https://i.ibb.co/QNkYF6y/img-Jaulah.png", title:"Jaulah", desc:"Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.", divisi: "Program"},
                 {id: 2, img:"https://i.ibb.co/Bg4JFLz/imgSekuy.png", title:"SEKUY (Semangat Berkurban Kuy)", desc:"Melatih ibadah berkurban serta membantu sesama kepada pengurus SHAR3, Anggota Rohis dan masyarakat sekitar yang membutuhkan.", divisi: "Program"},
-                {id: 3, img:"https://i.ibb.co/jf24gp1/img-Silatbar.png", title:"Silatbar (Silaturahmi Akbar)", desc:"Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang.", divisi: "Program"},
+                {id: 3, img:"https://i.ibb.co/jf24gp1/img-Silatbar.png", title:"Silatbar (Silaturahmi Akbar)", desc:"Menjalin silaturahmi keluarga besar alumni Rohis SMAN 3 Kabupaten Tangerang.", divisi: "Program"},
                 {id: 4, img:"https://i.ibb.co/80sXcMV/img-Hargur.png", title:"Bingkisan Cinta Hari Guru", desc:"Memperingati Hari Guru dan Menjalin Silaturahmi dengan guru SMAN 3 Kabupaten Tangerang.", divisi: "Program"},
             ],
             categories: [

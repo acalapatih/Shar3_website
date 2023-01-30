@@ -41,7 +41,7 @@
             <div class="detail inline-block m-5">
               <h5 class="font-semibold my-2">Silatbar</h5>
               <p class="text-justify">
-                Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang.
+                Menjalin silaturahmi keluarga besar alumni Rohis SMAN 3 Kabupaten Tangerang.
               </p>
               <router-link to="/eventlist" class="more inline-block my-2 cursor-pointer hover:font-semibold">
                 <p>Lihat Event lainnya...</p>
