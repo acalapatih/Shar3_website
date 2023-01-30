@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="article inline-block my-12 mx-12 bg-[#E7FEEA] rounded-2xl py-7 px-10 w-full">
-                <h4 class="font-semibold text-xl">Sahabat Remaja <br>(SHAR3)<br/></h4>
+                <h4 class="font-semibold text-xl">Sahabat Remaja (SHAR3)</h4>
                 <p class="my-2 text-justify">
                     Sahabat Remaja (SHAR3) adalah organisasi yang dibentuk oleh forum alumni Rohis SMAN 3 Kabupaten Tangerang. Organisasi ini berdiri sejak tahun 2018 dengan misi untuk mempererat silaturahmi antar alumni Rohis, membina Rohis, dan memberi kebermanfaatan kepada masyarakat melalui berbagai program kerja.
                 </p>

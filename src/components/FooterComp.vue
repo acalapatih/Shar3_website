@@ -53,7 +53,7 @@
     <div class="footerBawah">
         <p class="text-center">© 2023 Sahabat Remaja.</p>
         <hr class="my-1">
-        <p class="text-right text-sm pb-1 mr-1">Developed by <span class="font-semibold"><a href="instagram.com/@acalapatih">Acalapatih</a></span></p>
+        <p class="dev text-right text-sm pb-1 mr-1">Developed by <span class="font-semibold"><a href="https://www.instagram.com/acalapatih">Acalapatih</a></span></p>
     </div>
 </div>
 </template>
@@ -172,8 +172,8 @@ hr {
     }
 
     .contactUs {
-        margin-right: 0.75rem;
-        margin-left: 0.75rem;
+        margin-right: 0.5rem;
+        margin-left: 0.25rem;
     }
 
     .contactUs img {
@@ -185,8 +185,9 @@ hr {
         width: 15px;
     }
 
-    .footerBawah {
-        font-size: 14px;
+    .footerBawah,
+    .footerBawah .dev {
+        font-size: 12px;
     }
 }
 </style>

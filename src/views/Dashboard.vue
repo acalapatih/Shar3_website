@@ -37,11 +37,11 @@
         <div class="isi my-8 mx-5">
           <h4 class="my-2 text-xl font-semibold">Event SHAR3</h4>
           <div class="flex">
-            <img src="../assets/event/imgJaulah.png" class="inline-block rounded-xl h-[168px] w-[318px]">
+            <img src="../assets/event/imgSilatbar.png" class="inline-block rounded-xl h-[168px] w-[318px]">
             <div class="detail inline-block m-5">
-              <h5 class="font-semibold my-2">Jaulah</h5>
+              <h5 class="font-semibold my-2">Silatbar</h5>
               <p class="text-justify">
-                Melakukan kunjungan untuk menjalin Silaturahmi antara pengurus SHAR3, alumni, dan guru.
+                Menjalin silaturahmi keluarga besar alumni ROhis SMAN 3 Kabupaten Tangerang.
               </p>
               <router-link to="/eventlist" class="more inline-block my-2 cursor-pointer hover:font-semibold">
                 <p>Lihat Event lainnya...</p>
